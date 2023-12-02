@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://b4gsm1u61yae6"]
+
+[ext_resource type="Script" path="res://scripts/common/item_data.gd" id="1_0jv6s"]
+[ext_resource type="Texture2D" uid="uid://bdbuwtnbh3gug" path="res://assets/PixelMart/pixel_mart.png" id="2_hx5t6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxxe6"]
+atlas = ExtResource("2_hx5t6")
+region = Rect2(580, 36, 32, 32)
+
+[resource]
+script = ExtResource("1_0jv6s")
+name = "banana"
+desc = "Banana Desc"
+texture = SubResource("AtlasTexture_jxxe6")
+filled = null
+tags = Array[int]([1, 2])

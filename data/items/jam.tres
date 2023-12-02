@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://cod4pd64pdca8"]
+
+[ext_resource type="Script" path="res://scripts/common/item_data.gd" id="1_b1o3a"]
+[ext_resource type="Texture2D" uid="uid://bdbuwtnbh3gug" path="res://assets/PixelMart/pixel_mart.png" id="2_nemgg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wupta"]
+atlas = ExtResource("2_nemgg")
+region = Rect2(104, 70, 32, 32)
+
+[resource]
+script = ExtResource("1_b1o3a")
+name = "jam"
+desc = "Jam desc"
+texture = SubResource("AtlasTexture_wupta")
+filled = false
+tags = Array[int]([0, 1, 2])

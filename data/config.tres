@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Config" load_steps=2 format=3 uid="uid://c554esealwgfr"]
+
+[ext_resource type="Script" path="res://scripts/common/config.gd" id="1_x1g6d"]
+
+[resource]
+script = ExtResource("1_x1g6d")
+window_size = Vector2i(1152, 648)
+factor = 4

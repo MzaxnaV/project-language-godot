@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://d2lshon13d3uu"]
+
+[ext_resource type="Script" path="res://scripts/common/item_data.gd" id="1_wfpmx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4gj8a"]
+load_path = "res://.godot/imported/pixel_mart.png-8498d8108e8f5740f57a94dac636595f.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uup2j"]
+atlas = SubResource("CompressedTexture2D_4gj8a")
+region = Rect2(988, 2, 32, 32)
+
+[resource]
+script = ExtResource("1_wfpmx")
+name = "torch"
+desc = "torch"
+texture = SubResource("AtlasTexture_uup2j")
+filled = false
+tags = Array[int]([3, 4, 1, 2])

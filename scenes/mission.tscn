@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ysdnniqd4u5e"]
+
+[ext_resource type="FontFile" uid="uid://dl1dr7lnvurww" path="res://assets/m3x6.ttf" id="1_6cddl"]
+[ext_resource type="Script" path="res://scripts/missions/mission_item.gd" id="1_emsku"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iuvsk"]
+font = ExtResource("1_6cddl")
+
+[node name="Label" type="Label"]
+offset_right = 48.0
+offset_bottom = 16.0
+text = "TEST"
+label_settings = SubResource("LabelSettings_iuvsk")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_emsku")

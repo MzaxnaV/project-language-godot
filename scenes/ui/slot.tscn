@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwxlg6e2oppyj"]
+
+[ext_resource type="Script" path="res://scripts/inventory/slot.gd" id="1_r5o6d"]
+[ext_resource type="Texture2D" uid="uid://c00w55hh1hq2k" path="res://assets/godot.png" id="2_63mgb"]
+[ext_resource type="Shader" path="res://data/shaders/slot.gdshader" id="2_tgjqn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nrhib"]
+resource_local_to_scene = true
+shader = ExtResource("2_tgjqn")
+shader_parameter/filled = null
+
+[node name="Slot" type="PanelContainer"]
+custom_minimum_size = Vector2(16, 16)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_r5o6d")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+material = SubResource("ShaderMaterial_nrhib")
+layout_mode = 2
+texture = ExtResource("2_63mgb")
+expand_mode = 1
+stretch_mode = 5
